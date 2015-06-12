@@ -1,17 +1,21 @@
 angular.module('MainApp',['ngRoute', 'ngResource'])
 .config(function($routeProvider, $locationProvider){
 	$routeProvider
-		/*
-		.when('/contacts', {
+		
+		.when('/course', {
 			controller: 'ListController',
-			templateUrl: 'views/list.html'
+			templateUrl: 'views/course.html'
 		})
-		.when('/contacts/new',{
+		.when('/results',{
 			controller: 'NewController',
-			templateUrl: 'views/new.html'
+			templateUrl: 'views/results.html'
+		})
+		.otherwise({
+			redirectTo:''
 		});
-		*/
+		
 
 		//this is incase we need to add the #!
-	$locationProvider.html5Mode(true);
+	$locationProvider.html5Mode(
+	true);
 });
