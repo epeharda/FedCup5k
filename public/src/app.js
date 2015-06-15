@@ -1,7 +1,6 @@
 angular.module('MainApp',['ngRoute', 'ngResource'])
 .config(function($routeProvider, $locationProvider){
-	$routeProvider
-		
+	$routeProvider		
 		.when('/course', {
 			controller: 'ListController',
 			templateUrl: 'views/course.html'
@@ -11,7 +10,8 @@ angular.module('MainApp',['ngRoute', 'ngResource'])
 			templateUrl: 'views/results.html'
 		})
 		.otherwise({
-			redirectTo:''
+			controller: 'MainController',
+			templateUrl: 'home.html'
 		});
 		
 
