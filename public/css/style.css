@@ -1,10 +1,9 @@
 body{
-	background-color:red;
 }
 
 /*header styles*/
 .page-header {
-    width: 1000px;
+    width: 100%;
     overflow: hidden;
     margin: 50px auto;
     background: white;
@@ -14,6 +13,7 @@ body{
 	height:400px;
 	/*each image end to end totals to 3984px and I 50px to account for the page border*/
 	width:5000px;
+  margin-top:50px;
 }
 
 .photobanner img {
@@ -37,14 +37,26 @@ body{
     -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
     box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
 }
+.container{
+  padding-left:0px;
+  padding-right:0px;
+  width:100%;
+}
+h1{
+  font-size: 48px;
+  position: absolute;
+  color: white;
+  z-index:10;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
 /*header scrolling animation*/
 /*keyframe animations*/
 .first {
-    -webkit-animation: bannermove 30s linear infinite;
-       -moz-animation: bannermove 30s linear infinite;
-        -ms-animation: bannermove 30s linear infinite;
-         -o-animation: bannermove 30s linear infinite;
-            animation: bannermove 30s linear infinite;
+    -webkit-animation: bannermove 80s linear infinite;
+       -moz-animation: bannermove 80s linear infinite;
+        -ms-animation: bannermove 80s linear infinite;
+         -o-animation: bannermove 80s linear infinite;
+            animation: bannermove 80s linear infinite;
 }
  
 @keyframes "bannermove" {
