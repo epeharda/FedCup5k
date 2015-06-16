@@ -8,6 +8,7 @@ body{
     margin: 50px auto;
     background: white;
     padding-bottom:20px;
+    border-bottom:0px;
 }
 .photobanner {
 	height:400px;
