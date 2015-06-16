@@ -13,6 +13,14 @@ angular.module('MainApp',['ngRoute', 'ngResource'])
 			templateUrl: 'views/results.html',
 			controller: 'ResultsController'
 		})
+		.when('/photos',{
+			templateUrl: 'views/photos.html',
+			controller: 'ResultsController'
+		})
+		.when('/registration',{
+			templateUrl: 'views/registration.html',
+			controller: 'ResultsController'
+		})
 
 		
 

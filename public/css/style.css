@@ -12,7 +12,7 @@ body{
 .photobanner {
 	height:400px;
 	/*each image end to end totals to 3984px and I 50px to account for the page border*/
-	width:5000px;
+	width:6000px;
   margin-top:50px;
 }
 
@@ -43,17 +43,30 @@ body{
   width:100%;
 }
 .titleText{
-  font-size: 48px;
+  font-size: 56px;
+  font-family: 'Asap', sans-serif;
+  font-weight:bold;
   position: absolute;
-  color: white;
+  /*color: black;*/
   z-index:10;
-  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  /*text-shadow: 2px black;*/
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 2.00px; 
+  background-color:rgba(211, 211, 211, 0.8);
+  border-radius:10px;
+  margin-left:25px;
+  padding:10px;
+
+
 }
+
 .countdownContainer{
-  margin:15px 0px 0px;
+  margin:300px 0px 0px;
   position:absolute;
   right:10px;
   z-index:10;
+
 }
 .noCountdown{
   width: 140px; 
@@ -127,9 +140,13 @@ body{
 
 /*styling for the home page content*/
 .sponsors{
-  height:100px;
-  width:200px;
-  margin: 30px;
+  height:auto;
+  width:auto;
+  margin:30px;
+}
+.centered{
+  margin-left:auto;
+  margin-right:auto;
 }
 /*styling for results page*/
 .results{
