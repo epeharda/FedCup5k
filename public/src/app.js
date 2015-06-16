@@ -1,18 +1,19 @@
 angular.module('MainApp',['ngRoute', 'ngResource'])
 .config(function($routeProvider, $locationProvider){
-	$routeProvider		
+	$routeProvider	
+		.when('/',{
+			templateUrl:'views/home.html',
+			contorller: 'HomeController'
+		})	
 		.when('/course', {
-			controller: 'ListController',
-			templateUrl: 'views/course.html'
+			templateUrl: 'views/course.html',
+			controller: 'CourseController'
 		})
 		.when('/results',{
-			controller: 'NewController',
-			templateUrl: 'views/results.html'
+			templateUrl: 'views/results.html',
+			controller: 'ResultsController'
 		})
-		.otherwise({
-			controller: 'MainController',
-			templateUrl: 'home.html'
-		});
+
 		
 
 		//this is incase we need to add the #!

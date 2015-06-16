@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html >
-	<head data-ng-app="MainApp">
+<html data-ng-app="MainApp">
+	<head >
 		<title>FedCup 5k</title>
 		<!--angular uses this base element which path to use when it gets any front end resource- this is the root b/c of "/"-->
-		<!--<base href=''>-->
+		<base href='/'>
 
 
 	</head>
@@ -11,6 +11,21 @@
 	<body>
 		<div class='container'>
 			<div class='page-header'>
+			<nav class="navbar navbar-default">
+	            <div class="container">
+	                <div class="navbar-header">
+	                    <a class="navbar-brand" href="/">Welcome to the 2016 FedCup5k!</a>
+	                </div>
+
+	                <ul class="nav navbar-nav navbar-right">
+	                    <li><a href="/"><i class="fa fa-home"></i>Home</a></li>
+	                    <li><a href="/course"><i class="fa fa-shield"></i>Course</a></li>
+	                    <li><a href="/results"><i class="fa fa-comment"></i>Results</a></li>
+	                </ul>
+	            </div>
+            </nav>
+
+
 				<h1>FedCup 5k</h1>
 				<div class="photobanner">
 					<img class="first" src="img/pic1.jpg"/>
@@ -30,7 +45,8 @@
 			</div>
 					<!--the place holder to render our view dependent on the route-->
 			<div class="row">
-				<div class="col-sm-12" data-ng-view>
+				<div class="col-sm-12" ng-view>
+					{{message}}
 
 				</div>
 			</div>
