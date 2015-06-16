@@ -9,7 +9,7 @@
 	</head>
 
 	<body>
-		<div class='container'>
+		<div class='container1'>
 			<div class='page-header'>
 			<nav class="navbar navbar-default">
 	            <div class="container">
@@ -26,7 +26,15 @@
             </nav>
 
 
-				<h1>FedCup 5k</h1>
+				<h1 class="titleText pull-left">FedCup 5k</h1>
+				<!--got code below from mycountdown.org-->
+				<div class="countdownContainer pull-right">
+					<noscript>
+						<div align="center" class="noCountdown">
+						</div>
+					</noscript>
+					<script type="text/javascript" src="http://mycountdown.org/countdown.php?cp2_Hex=19181f&cp1_Hex=F9F9FF&img=1&hbg=&fwdt=190&lab=1&ocd=My Countdown&text1=FedCup 5k&text2=FedCup 5k&group=My Countdown&countdown=My Countdown&widget_number=3015&event_time=1463184000&timezone=UTC"></script>
+				</div>
 				<div class="photobanner">
 					<img class="first" src="img/pic1.jpg"/>
 					<img src="img/pic2.jpg"/>
@@ -46,7 +54,7 @@
 					<!--the place holder to render our view dependent on the route-->
 			<div class="row">
 				<div class="col-sm-12" ng-view>
-					{{message}}
+					
 
 				</div>
 			</div>
