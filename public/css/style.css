@@ -1,5 +1,11 @@
 body{
-    background-color:#e7e7e7;
+    /*background-color:#e7e7e7;*/
+    background-color:black;
+    color:white;
+}
+.navbar-default{
+  background-color:#282828;
+  border-color:#282828;
 }
 @media(max-width: 800px){
 
@@ -18,7 +24,7 @@ body{
     width: 100%;
     overflow: hidden;
     margin: 50px auto;
-    background: #e7e7e7;
+    background: black;
     padding-bottom:20px;
     border-bottom:0px;
 }
@@ -158,7 +164,9 @@ body{
 }
 .sponsors{
   width:100%;
+  height:100px;
   margin:30px;
+  background-color:white;
 }
 
 .sponsorHover img:hover {
