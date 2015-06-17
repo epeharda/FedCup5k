@@ -29,6 +29,10 @@ angular.module('MainApp',['ngRoute', 'ngResource'])
 			templateUrl: 'views/history.html',
 			controller: 'ResultsController'
 		})
+		.when('/pastresults',{
+			templateUrl: 'views/pastresults.html',
+			controller: 'ResultsController'
+		})
 
 		
 
