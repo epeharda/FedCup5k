@@ -3,10 +3,9 @@ body{
     background-color:black;
     color:white;
 }
-.navbar-default{
-  background-color:#282828;
-  border-color:#282828;
-}
+
+
+/*configuring below for mobile screens*/
 @media(max-width: 800px){
 
   .countdownContainer{
@@ -20,6 +19,10 @@ body{
 }
 
 /*header styles*/
+.navbar-default{
+  background-color:#282828;
+  border-color:#282828;
+}
 .page-header {
     width: 100%;
     overflow: hidden;
@@ -156,7 +159,12 @@ body{
  }
  
 }
-
+/*styling for twitter and facebook connect*/
+.twitter{
+  height:40px;
+  width:40px;
+  opacity:0.5;
+}
 
 /*styling for the home page content*/
 .mainButton{
