@@ -1,7 +1,17 @@
 body{
 
 }
+@media(max-width: 800px){
 
+  .countdownContainer{
+    display:none;
+  }
+
+  .titleText{
+    display:none;
+  }
+
+}
 
 /*header styles*/
 .page-header {
@@ -143,6 +153,9 @@ body{
 
 
 /*styling for the home page content*/
+.mainButton{
+  margin:5px;
+}
 .sponsors{
   /*height:auto;*/
   width:100%;
