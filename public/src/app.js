@@ -25,6 +25,10 @@ angular.module('MainApp',['ngRoute', 'ngResource'])
 			templateUrl: 'views/map.html',
 			controller: 'ResultsController'
 		})
+		.when('/history',{
+			templateUrl: 'views/history.html',
+			controller: 'ResultsController'
+		})
 
 		
 
