@@ -21,6 +21,10 @@ angular.module('MainApp',['ngRoute', 'ngResource'])
 			templateUrl: 'views/registration.html',
 			controller: 'ResultsController'
 		})
+		.when('/map',{
+			templateUrl: 'views/map.html',
+			controller: 'ResultsController'
+		})
 
 		
 
