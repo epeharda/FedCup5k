@@ -157,10 +157,8 @@ body{
   margin:5px;
 }
 .sponsors{
-  /*height:auto;*/
   width:100%;
   margin:30px;
-  background-color:white;
 }
 
 .sponsorHover img:hover {
